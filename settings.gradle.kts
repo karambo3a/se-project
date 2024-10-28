@@ -1,1 +1,1 @@
-rootProject.name = "HomeworkReview"
+rootProject.name = "se-project"
