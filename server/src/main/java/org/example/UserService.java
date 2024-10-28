@@ -1,5 +1,8 @@
 package org.example;
 
+import org.example.entities.User;
+import org.example.repositories.UserRepository;
+
 public class UserService {
     private final UserRepository userRepository;
 

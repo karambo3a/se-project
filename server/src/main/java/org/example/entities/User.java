@@ -1,4 +1,4 @@
-package org.example;
+package org.example.entities;
 
 public class User {
     public static class Role {

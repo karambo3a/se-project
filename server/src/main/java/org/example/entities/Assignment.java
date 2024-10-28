@@ -1,4 +1,4 @@
-package org.example;
+package org.example.entities;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -26,7 +26,7 @@ public class Assignment {
         this.feedback = feedback;
     }
 
-    record PDF(String fileName, String fileType, String content) {
+    public record PDF(String fileName, String fileType, String content) {
     }
 
     public Long getId() {

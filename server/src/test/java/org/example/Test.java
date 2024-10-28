@@ -1,5 +1,9 @@
 package org.example;
 
+import org.example.entities.Assignment;
+import org.example.entities.Feedback;
+import org.example.entities.User;
+import org.example.repositories.UserRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
