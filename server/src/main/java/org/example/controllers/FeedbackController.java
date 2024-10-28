@@ -1,2 +1,4 @@
-package org.example.controllers;public class FeedbackController {
+package org.example.controllers;
+
+public class FeedbackController {
 }
