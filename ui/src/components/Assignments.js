@@ -1,6 +1,6 @@
 import React, { useState, } from 'react';
-import { Button, Input } from 'antd';
 import './Assignments.css'
+import Task from './Task';
 
 function Assignments(){
     
@@ -17,11 +17,9 @@ function Assignments(){
               <h1>Task</h1>
             </header>
             <main>
-              <ul>
                 {tasks.map(task => (
-                  <li key={task.id}>{task.title}</li>
+                  <Task key={task.id} title={task.title}/>
                 ))}
-              </ul>
             </main>
           </div>
     );

@@ -1,0 +1,14 @@
+.task {
+    position: absolute; 
+    top: 120px; 
+    bottom: 20px; 
+    left: 0;
+    right: 0;
+    color: white; 
+    border: none; 
+    font-size: 24px; 
+    cursor: pointer; 
+    text-align: center; 
+    background-color: grey;
+    padding: 0; 
+}
