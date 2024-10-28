@@ -1,12 +1,9 @@
-name: CI/CD Pipeline
+name: CI for version-2
 
 on:
   push:
     branches:
-      - main
-  pull_request:
-    branches:
-      - main
+      - version-2
 
 jobs:
   build:
@@ -20,15 +17,6 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '21'
-          distribution: 'adopt'
 
-      - name: Build with Gradle
-        run: ./gradlew build
-
-      - name: Run tests
-        run: ./gradlew test
-
-      - name: Deploy
-        if: github.ref == 'refs/heads/main'
-        run: |
-          echo "Deploying to production..."
+      - name: Build and test
+        run: ./gradlew build && ./gradlew test
